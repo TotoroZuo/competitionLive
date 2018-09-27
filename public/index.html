@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>icon.ico">
+    <title>球吧网 - 足球直播|NBA直播|体育直播 - 最全面的足球直播NBA直播网</title>
+    <style>
+        #loading-box{
+             display: flex;
+             justify-content:center;
+             align-items:center;
+             height: 100vh;
+             background-color: hsla(300,2%,19%,.3);
+             transition: opacity .3s;
+             flex-direction: column;
+         }
+        #loading-box img{
+            width: 100px;
+            border-radius: 4px;
+        }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but live doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="loading-box">
+        <div>
+            <img src="<%= BASE_URL %>loading.webp" alt="">
+        </div>
+        <div style="font-size:16px;padding:15px;">Loading...</div>
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
